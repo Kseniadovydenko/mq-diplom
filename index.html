@@ -6,19 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mq diploma</title>
   <link rel="stylesheet" href="css/desktop.css">
-  <!-- <link rel="stylesheet" href="css/tablet.css" media="(min-width: 641px) and (max-width: 1199px)">
-    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 640px)">-->
-
 </head>
 
 <body>
+  <div class="popup visually-hidden">
+    <div class="popup-container">
+      <label class="popup-close"><span class="visually-hidden">Закрыть</span></label>
+      <h1 class="popup-title shop-title">Ваш фидбек</h1>
+      <form class="popup-questions">
+        <label for="attendance" class="popup-text">Как часто вы заходите на сайт?</label>
+        <select id="attendance" name="attendance" class="popup-select arrows">
+          <option value="Почти каждый день" selected>Почти каждый день</option>
+          <option value="Раз в несколько дней">Раз в несколько дней</option>
+          <option value="Раз в несколько недель">Раз в несколько недель</option>
+          <option value="Несколько раз в год">Несколько раз в год</option>
+        </select>
+      </form>
+      <form class="popup-questions">
+        <p class="popup-text">Вы подписаны на e-mail рассылку?</p>
+        <input id="yes" type="radio" name="sign" checked class="radio-btn">
+        <label for="yes" class="radio-answer"><span class="radio-text">Да</span></label>
+        <input id="no" type="radio" name="sign" class="radio-btn">
+        <label for="no" class="radio-answer"><span class="radio-text">Нет</span></label>
+      </form>
+      <form>
+        <label for="comment" class="popup-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+          <textarea id="comment" name="comment" class="comment" placeholder="Может, больше рецептов?"></textarea>
+      </form>
+      <button class="btn-subscription" type="submit">Отправить</button>
+
+
+    </div>
+
+  </div>
   <header class="header">
     <div class="header-container">
       <div class="container">
         <div class="logo">
-          <a href="#0"><img src="./svg/noemi-logo.svg" alt="Логотип" /></a>
+          <a href="#0" class="logo"><img src="./svg/noemi-logo.svg" alt="Логотип" /></a>
         </div>
+
         <nav class="menu">
+          <button class="menu-burger">
+            <span class="burger-line">
+              <p class="visually-hidden">Oткрыть меню</p>
+            </span>
+          </button>
           <ul class="menu-list">
             <li class="menu-item"><a class="menu-item-link" href="#0">Главная</a></li>
             <li class="menu-item"><a class="menu-item-link" href="#0">Посты</a></li>
@@ -28,6 +61,9 @@
             <li class="menu-item"><a class="menu-item-link" href="#0">Контакты</a></li>
           </ul>
         </nav>
+      </div>
+      <div class="logo-mobile">
+        <a href="#0" class="img-mobile"><img src="./svg/noemi-logo.svg" alt="Логотип"></a>
       </div>
       <div class="header-title">
         <h1 class="intro">Блог о творчестве, спорте, и образе жизни</h1>
@@ -126,10 +162,7 @@
           </div>
           <p class="card-text">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою
             палатку?</p>
-          <p class="card-text">Мы составили список лучших летних фестивалей по всему миру
-            Мы составили список лучших летних фестивалей по всему миру.Мы составили список лучших летних фестивалей по
-            всему миру.Мы составили список лучших летних фестивалей по всему миру.Мы составили список лучших летних
-            фестивалей по всему миру.</p>
+          <p class="card-text">Мы составили список лучших летних фестивалей по всему миру</p>
         </div>
       </article>
       <article class="card">
@@ -250,7 +283,7 @@
       </section>
       <section>
         <form class="search" action="#0">
-          <label for="field-search" class="visually-hidden">Поиск</label>
+          <label for="field-search" class="visually-hidden search-new">Поиск</label>
           <input id="field-search" class="field-new-search" type="text" placeholder="Найти...">
           <button class="btn" type="submit">
             <span class="visually-hidden">Найти</span>
@@ -315,7 +348,7 @@
                 <span class="product-price-old">1000 ₽</span>
                 <span class="product-price">800 ₽</span>
               </div>
-              <button class="product__button" type="button"><a class="title-link" href="#0">В магазин</a></button>
+              <a class="product__button" href="#0">В магазин</a>
             </div>
           </div>
         </div>
@@ -334,7 +367,7 @@
                 class="color-link" href="#0"> весенняя серия постов </a>в блоге и несколько подкастов.</p>
             <div class="shop-info">
               <span class="one-price product-price">3500 ₽</span>
-              <button class="product__button" type="button"><a class="title-link" href="#0">В магазин</a></button>
+              <a class="product__button" href="#0">В магазин</a>
             </div>
           </div>
         </div>
@@ -356,7 +389,7 @@
                 <span class="product-price-old">500 ₽</span>
                 <span class="product-price">400 ₽</span>
               </div>
-              <button class="product__button" type="button"><a class="title-link" href="#0">В магазин</a></button>
+              <a class="product__button" href="#0">В магазин</a>
             </div>
           </div>
         </div>
