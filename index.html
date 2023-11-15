@@ -10,10 +10,10 @@
 
 <body>
   <div class="popup visually-hidden">
-    <div class="popup-container">
+    <form class="popup-container">
       <label class="popup-close"><span class="visually-hidden">Закрыть</span></label>
       <h1 class="popup-title shop-title">Ваш фидбек</h1>
-      <form class="popup-questions">
+      <div class="popup-questions">
         <label for="attendance" class="popup-text">Как часто вы заходите на сайт?</label>
         <select id="attendance" name="attendance" class="popup-select arrows">
           <option value="Почти каждый день" selected>Почти каждый день</option>
@@ -21,23 +21,20 @@
           <option value="Раз в несколько недель">Раз в несколько недель</option>
           <option value="Несколько раз в год">Несколько раз в год</option>
         </select>
-      </form>
-      <form class="popup-questions">
+      </div>
+      <div class="popup-questions">
         <p class="popup-text">Вы подписаны на e-mail рассылку?</p>
         <input id="yes" type="radio" name="sign" checked class="radio-btn">
         <label for="yes" class="radio-answer"><span class="radio-text">Да</span></label>
         <input id="no" type="radio" name="sign" class="radio-btn">
         <label for="no" class="radio-answer"><span class="radio-text">Нет</span></label>
-      </form>
-      <form>
+      </div>
+      <div>
         <label for="comment" class="popup-text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
           <textarea id="comment" name="comment" class="comment" placeholder="Может, больше рецептов?"></textarea>
-      </form>
+      </div>
       <button class="btn-subscription" type="submit">Отправить</button>
-
-
-    </div>
-
+    </form>
   </div>
   <header class="header">
     <div class="header-container">
